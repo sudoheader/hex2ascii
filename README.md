@@ -16,3 +16,9 @@ You'll need the `.bin` file generated from HoneyBOT.
 I have converted part of the `.bin` called `HoneyBOT_Packet_Data.txt` for this reason so the `.bin` file is not needed for this script.
 
 `HoneyBOT_h2a.sh` does need some debugging...
+
+## Screenshots of spreadsheet:
+
+![2022-06-29_15-28_HoneyBOT_spreadsheet_data_packet](https://user-images.githubusercontent.com/19720370/176559407-f78a5e8d-cebc-4d6a-9367-0150406d1bbc.png)
+
+![2022-06-29_15-29_HoneyBOT_spreadsheet_data_packet_part2](https://user-images.githubusercontent.com/19720370/176559420-5171341e-c9c6-4e62-94e5-91ddff295a7a.png)
