@@ -8,7 +8,7 @@ Use `hex2ascii_clip.sh` along with `xclip` to copy only the contents that will b
 ```bash
 ./hex2ascii_clip.sh | xclip -sel clip
 ```
-will wait for you to paste hexadecimal data and paste it into your clipboard after pressing enter.
+will wait for you to paste hexadecimal data and the script pastes it into your clipboard, after pressing enter.
 
 ## About `HoneyBOT_h2a.sh`
 You'll need the `.bin` file generated from HoneyBOT.
