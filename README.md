@@ -2,12 +2,20 @@
 
 Scripts written by @sudoheader
 
+## Purpose
+
+These scripts were written with the intention to extract HoneyBOT Packet Data and convert it into readable ASCII.
+Take a look at this:
+![2022-06-30_14-31_HoneyBOT_spreadsheet](https://user-images.githubusercontent.com/19720370/176781839-f39bca1e-0647-4d44-bbf2-f53e58addd1c.png)
+
+Notice how the Packet Data column includes data that is trailing beyond our view. The only readable ouputs are `SYN`, `ACK`, `FIN`, and an empty line. My scripts (especially `HoneyBOT_h2a.sh`) are designed to take that data and convert hexadecimal to ASCII.
+
 NOTE: Take a look at `hex2ascii.sh`. This script can convert for any hexadecimal output as long as it's not a hexdump.
 
-Run `hex2ascii_clip.sh`.
-1. You will need to have `xclip` installed in order to run this properly.
-2. You should copy and paste the hexadecimal content you want to convert.
-3. It should then copy the contents that have been converted into your clipboard.
+Another way to do this manually:
+1. Run `hex2ascii_clip.sh`. You will need to have `xclip` installed in order to run this properly.
+2. Copy and paste the hexadecimal content you wish to convert.
+3. The script should then put the converted contents into your clipboard.
 For example:
 ```bash
 ./hex2ascii_clip.sh
@@ -18,7 +26,7 @@ will wait for you to paste hexadecimal data and the script will paste it into yo
 You'll need the `.csv` file generated from HoneyBOT. For instance, HoneyBOT generates a file of the form `Log_YYYYMMDD.csv`. `Log_20220628.csv` is provided as an example.
 `HoneyBOT_Packet_Data.txt` needs to be in the directory when running this script.
 
-I have converted part of the `Log_20220628.csv`, called `HoneyBOT_Packet_Data.txt` for this reason so the `.csv` file is not necessary for the script to run.
+I have converted part of the `Log_20220628.csv`, called `HoneyBOT_Packet_Data.txt` for this reason so the `.csv` file is not necessary for the script to run. `HoneyBOT_Packet_Data.txt` contains all data from the Packet Data column in `Log_20220628.csv`.
 
 `HoneyBOT_h2a.sh` ~~does need some debugging~~. It works as intended now.
 
