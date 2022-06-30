@@ -15,7 +15,9 @@ You'll need the `.bin` file generated from HoneyBOT.
 `HoneyBOT_Packet_Data.txt` is needed in the directory running this script.
 I have converted part of the `.bin` called `HoneyBOT_Packet_Data.txt` for this reason so the `.bin` file is not needed for this script.
 
-`HoneyBOT_h2a.sh` does need some debugging...
+`HoneyBOT_h2a.sh` ~~does need some debugging~~. It works as intended now.
+
+Check `Packet_Data_output.txt` for more details.
 
 ## Screenshots of spreadsheet:
 

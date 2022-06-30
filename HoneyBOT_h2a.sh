@@ -6,29 +6,21 @@ input="./HoneyBOT_Packet_Data.txt"
 #####################################
 while read -r line
 do
-  #if [ ! -z "$line" ]
-    if $line == "47"
-    then
+  case $line in
+    "47")
       echo "\n" # echo new line
-    elif $line == "SYN"
-    then
+    ;;
+    "SYN")
       echo "SYN"
-    elif $line == "ACK"
-    then
+    ;;
+    "ACK")
       echo "ACK"
-    elif $line == "FIN"
-    then
+    ;;
+    "FIN")
       echo "FIN"
-    else
+    ;;
+    *)
       echo "$line" | xxd -r -p
-    fi
+  esac
 
 done < "$input"
-
-#echo ">>> Welcome to HEX2ASCII bash script!!! <<<"
-#echo "+++ This program is meant to take hex output and print in ASCII format"
-
-#read -p "Enter the hex output: " hex
-
-#echo "$hex" | xxd -r -p
-
