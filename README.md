@@ -27,16 +27,23 @@ You'll need the `.csv` file generated from HoneyBOT. For instance, HoneyBOT gene
 `HoneyBOT_Packet_Data.txt` needs to be in the directory when running this script.
 
 I have converted part of the `Log_20220628.csv`, called `HoneyBOT_Packet_Data.txt` for this reason so the `.csv` file is not necessary for the script to run. `HoneyBOT_Packet_Data.txt` contains all data from the Packet Data column in `Log_20220628.csv`.
+Check `Packet_Data_output.txt` for more details, because this is the basis for running the script `HoneyBOT_h2a.sh`.
 
-`HoneyBOT_h2a.sh` ~~does need some debugging~~. It works as intended now.
-
-Check `Packet_Data_output.txt` for more details.
+`HoneyBOT_h2a.sh` works as it was intended. Run as:
+```bash
+./HoneyBOT_h2a.sh
+```
+and you'll see a stream of data converting all of `HoneyBOT_Packet_Data.txt` in ~4 seconds in your terminal. By default, it will output in `.csv` format.
 
 You can also run:
 ```bash
 ./HoneyBOT_h2a.sh > output.txt
 ```
-to save the converted output of `HoneyBOT_Packet_Data.txt` to `output.txt`.
+or
+```bash
+./HoneyBOT_h2a.sh > output.csv
+```
+to save the converted output of `HoneyBOT_Packet_Data.txt` to either format of your choosing.
 
 ## Screenshots of spreadsheet:
 

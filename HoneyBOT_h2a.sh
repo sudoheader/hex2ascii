@@ -9,7 +9,7 @@ NEW_LINE_COUNTS=`wc -l ${input}`
 while read -r line
 do
   case $line in
-    "47")
+    "\n")
       echo $COUNTER,"\n" # echo new line
       let COUNTER=COUNTER+1
     ;;
