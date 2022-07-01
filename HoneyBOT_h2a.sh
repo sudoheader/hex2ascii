@@ -1,5 +1,6 @@
 #!/bin/bash
 # Created by @sudoheader
+# NOTE: This script will need some input. HoneyBOT_Packet_Data.txt should be provided for this repo.
 input="./HoneyBOT_Packet_Data.txt"
 ######################################
 # $IFS removed to allow the trimming #
